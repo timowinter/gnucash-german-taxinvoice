@@ -274,7 +274,7 @@ page {
       </div>
       <div>
         <div class="field--text one-row-top">Leistungszeitraum: <?scm:d (nbsp opt-leistungsdatum) ?></div>
-        <div class="field--text one-row-top">Auftrag: <?scm:d jobnumber ?></div>
+        <div class="field--text one-row-top">Auftrag: <?scm:d billingid ?></div>
         <div class="field--text one-row-top">  <?scm:d (nl->br opt-extra-notes-before) ?> </div>
         <div class="field--text one-row-top"> &nbsp </div>
 
@@ -377,9 +377,9 @@ page {
     </div>
     <div class="col-45">
         <div>Bankverbindung</div>
+        <div><?scm:d opt-bank-name ?></div>
         <div>IBAN: <?scm:d opt-bank-ibancode ?></div>
         <div>BIC: <?scm:d opt-bank-swiftcode ?></div>
-        <div><?scm:d opt-bank-accountnumber ?></div>
     </div>
     <div>
         <div>Steuernummer <?scm:d opt-taxid ?></div>
